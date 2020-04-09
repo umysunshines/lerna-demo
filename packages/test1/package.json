@@ -1,8 +1,8 @@
 {
   "name": "test1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "test1 package",
-  "author": "angelasubi <21978301@qq.com>",
+  "author": "umysunshines <837892942@qq.com>",
   "homepage": "https://github.com/umysunshines/lerna-demo#readme",
   "license": "ISC",
   "main": "lib/index.js",
@@ -23,5 +23,6 @@
   },
   "bugs": {
     "url": "https://github.com/umysunshines/lerna-demo/issues"
-  }
+  },
+  "gitHead": "7b64e901afb2d705465c7dd80b231f80195d144a"
 }
