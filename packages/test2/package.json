@@ -1,0 +1,30 @@
+{
+  "name": "test2",
+  "version": "0.0.1",
+  "description": "test2 package",
+  "author": "angelasubi <21978301@qq.com>",
+  "homepage": "https://github.com/umysunshines/lerna-demo#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umysunshines/lerna-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/umysunshines/lerna-demo/issues"
+  },
+  "dependencies": {
+    "test1": "^0.0.1"
+  }
+}
