@@ -12,6 +12,12 @@ module.exports = options => {
     ]
   ]
 
+  if (!process.env['LOCAL_DEBUG']) {
+    presets.push([
+      'minify'
+    ])
+  }
+
   const plugins = []
 
   return {

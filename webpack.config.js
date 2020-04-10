@@ -4,10 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = options => {
   return {
     mode: 'production',
-    entry: path.resolve(options.path, './lib/index'),
+    entry: path.resolve(options.path, './src/index'),
     output: {
       path: path.resolve(options.path, './dist'),
-      filename: `${options.name}.min.js`,
+      filename: `index.min.js`,
       library: options.name,
       libraryTarget: 'umd',
       umdNamedDefine: true
@@ -21,7 +21,7 @@ module.exports = options => {
         {
           test: /\.js$/,
           loader: 'babel-loader',
-          include: [path.resolve(options.path, './lib')],
+          include: [path.resolve(options.path, './src')],
           options: {
             configFile: path.resolve(__dirname, 'babel.config.js')
           }
@@ -29,7 +29,7 @@ module.exports = options => {
       ]
     },
     optimization: {
-      minimize: false
+      minimize: true
     }
   }
 }

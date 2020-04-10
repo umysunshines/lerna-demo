@@ -5,10 +5,10 @@
   "author": "umysunshines <837892942@qq.com>",
   "homepage": "https://github.com/umysunshines/lerna-demo#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "type": "module",
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "files": [
@@ -27,5 +27,5 @@
   "dependencies": {
     "test1": "0.1.0"
   },
-  "gitHead": "bb3635650e9339f185674cf29a4c56a452db4996"
+  "gitHead": "872aa759060ff29175edc300bfacf3a353ab8b7c"
 }

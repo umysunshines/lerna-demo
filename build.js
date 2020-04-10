@@ -47,7 +47,7 @@ function build (configs) {
         return
       }
 
-      console.log(`${config.name} 构建成功！`)
+      console.log(`${config.name} 打包成功！`)
     })
   })
 }
