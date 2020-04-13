@@ -1,8 +1,7 @@
-const log = (str, callback) => {
-  console.log(str)
-  callback()
+const add = (a, b) => {
+  return a + b
 }
 
 export {
-  log
+  add
 }

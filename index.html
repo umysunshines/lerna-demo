@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./packages/test2/dist/index.min.js"></script>
+    <script type="module" src="./packages/test1/dist/index.min.js"></script>
+    <script type="module">
+        var res = window.test1.add(123, 3)
+        console.log(res)
+    </script>
 </body>
 </html>
