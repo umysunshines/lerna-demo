@@ -20,13 +20,17 @@ function getExternals (dependencies) {
 const packageWebpackConfig = {}
 
 packages.forEach(item => {
-  const packagePath = path.resolve(__dirname, './packages/', item)
+  const stat = fs.lstatSync(path.resolve(__dirname, './packages/', item))
+  const isDir = stat.isDirectory()
 
-  const { name, dependencies } = require(path.resolve(packagePath, 'package.json'))
-  packageWebpackConfig[item] = {
-    path: packagePath,
-    name,
-    externals: getExternals(dependencies)
+  const packagePath = path.resolve(__dirname, './packages/', item)
+  if (isDir) {
+    const { name, dependencies } = require(path.resolve(packagePath, 'package.json'))
+    packageWebpackConfig[item] = {
+      path: packagePath,
+      name,
+      externals: getExternals(dependencies)
+    }
   }
 })
 

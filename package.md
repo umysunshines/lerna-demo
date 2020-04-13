@@ -1,5 +1,18 @@
 # npm包管理规范
 
+## 包命名规范
+采用作用域命名（@+npm用户名）的方式。  
+```
+// 假设原先的包名如下（采用name-name的规则可以更加的一目了然）
+{
+  name: 'local-storage'
+}
+// 改造后，通过 --access=public 方式公有化
+{
+  name: '@name/local-storage'
+}
+```
+
 ## 版本命名规则
 
 ```

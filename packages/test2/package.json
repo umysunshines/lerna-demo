@@ -25,7 +25,7 @@
     "url": "https://github.com/umysunshines/lerna-demo/issues"
   },
   "dependencies": {
-    "test1": "0.1.0"
+    "test1": "^0.1.0"
   },
   "gitHead": "872aa759060ff29175edc300bfacf3a353ab8b7c"
 }
